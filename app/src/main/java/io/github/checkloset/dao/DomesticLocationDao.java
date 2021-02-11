@@ -1,5 +1,6 @@
 package io.github.checkloset.dao;
 
+import androidx.room.Dao;
 import androidx.room.Delete;
 import androidx.room.Insert;
 import androidx.room.OnConflictStrategy;
@@ -10,6 +11,7 @@ import java.util.List;
 import io.github.checkloset.entity.Clothes;
 import io.github.checkloset.entity.DomesticLocation;
 
+@Dao
 public interface DomesticLocationDao {
 
     @Query("select * from DomesticLocation")
