@@ -1,4 +1,4 @@
-package io.github.checkloset.db;
+/*package io.github.checkloset.db;
 
 import android.content.Context;
 
@@ -37,3 +37,4 @@ public abstract class AppDatabase extends RoomDatabase {
         return instance;
     }
 }
+*/
