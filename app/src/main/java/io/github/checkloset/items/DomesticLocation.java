@@ -1,4 +1,4 @@
-package io.github.checkloset.entity;
+package io.github.checkloset.items;
 
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;

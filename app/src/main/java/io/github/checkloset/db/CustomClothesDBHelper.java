@@ -9,7 +9,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 import java.util.ArrayList;
 import java.util.List;
 
-import io.github.checkloset.entity.CustomClothes;
+import io.github.checkloset.items.CustomClothes;
 
 public class CustomClothesDBHelper extends SQLiteOpenHelper {
 
@@ -136,4 +136,18 @@ public class CustomClothesDBHelper extends SQLiteOpenHelper {
         return db.update(TABLE_NAME, contentValues, ID + "=?",
                 new String[]{String.valueOf(customClothes.getId())});
     }
+
+    public void deleteCustomClothes(CustomClothes customClothes){
+        SQLiteDatabase db = this.getWritableDatabase();
+        db.delete(TABLE_NAME, ID + "=?", new String[]{String.valueOf(customClothes.getId())});
+
+        db.close();
+    }
+
+    public void deleteCustomClothes(int id){
+        SQLiteDatabase db = this.getWritableDatabase();
+        db.delete(TABLE_NAME, ID + "=?", new String[]{String.valueOf(id)});
+
+        db.close();
+    } // 앱 상황 따라 필요없는거 삭제할 것
 }

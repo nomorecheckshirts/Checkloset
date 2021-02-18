@@ -1,4 +1,4 @@
-package io.github.checkloset.entity;
+package io.github.checkloset.items;
 
 public class CustomClothes {
     public int id;

@@ -14,6 +14,7 @@ public class CalenderLookDBHelper extends SQLiteOpenHelper {
     private static final String ID = "id";
     private static final String CUSTOM_ID = "customClothes_id";
     private static final String CLOTHES_DATE = "clothes_date";
+    private static final String WEATHER = "weather";
     private static final String REPRESENT_COLOR = "represent_color";
 
 
@@ -28,6 +29,7 @@ public class CalenderLookDBHelper extends SQLiteOpenHelper {
                 ID + "integer primary key, " +
                 CUSTOM_ID + "integer, " +
                 CLOTHES_DATE + "text, " +
+                WEATHER + "text, " +
                 REPRESENT_COLOR + "text )";
 
         sqLiteDatabase.execSQL(Create_table);

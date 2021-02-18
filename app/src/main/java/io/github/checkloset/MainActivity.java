@@ -1,13 +1,10 @@
 package io.github.checkloset;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.room.Room;
 
 import android.os.Bundle;
 
-import io.github.checkloset.db.AppDatabase;
 import io.github.checkloset.db.CustomClothesDBHelper;
-import io.github.checkloset.entity.CustomClothes;
 
 public class MainActivity extends AppCompatActivity {
 
