@@ -10,12 +10,12 @@ import io.github.checkloset.dao.ClothesDao;
 import io.github.checkloset.dao.CustomClothesDao;
 import io.github.checkloset.dao.DomesticLocationDao;
 import io.github.checkloset.dao.FashionDao;
+import io.github.checkloset.entity.CalenderLook;
 import io.github.checkloset.entity.Clothes;
 import io.github.checkloset.entity.CustomClothes;
 import io.github.checkloset.entity.DomesticLocation;
-import io.github.checkloset.entity.Fashion;
 
-@Database(entities = {Clothes.class, CustomClothes.class, DomesticLocation.class, Fashion.class}, version = 1)
+@Database(entities = {Clothes.class, CustomClothes.class, DomesticLocation.class, CalenderLook.class}, version = 1)
 public abstract class AppDatabase extends RoomDatabase {
 
     public abstract ClothesDao clothesDao();
