@@ -2,26 +2,26 @@ package io.github.checkloset.items;
 
 public class CalenderLook {
     public int id;
-    public int customClothes_id;
+    public String customClothes_ids;
     public String clothes_date = "2021-02-02";
     public String weather;
     public String represent_color; // RRRGGGBBB form
 
-    public CalenderLook(int id, int customClothes_id, String clothes_date,
+    public CalenderLook(int id, String customClothes_ids, String clothes_date,
                         String weather, String represent_color) {
         this.id = id;
-        this.customClothes_id = customClothes_id;
+        this.customClothes_ids = customClothes_ids; // id|id|id format
         this.clothes_date = clothes_date;
         this.weather = weather;
         this.represent_color = represent_color;
     }
 
-    public int getId() {
-        return id;
+    public CalenderLook(){
+
     }
 
-    public int getCustomClothes_id() {
-        return customClothes_id;
+    public int getId() {
+        return id;
     }
 
     public String getClothes_date() {
@@ -36,12 +36,16 @@ public class CalenderLook {
         return represent_color;
     }
 
+    public String getCustomClothes_ids() {
+        return customClothes_ids;
+    }
+
     public void setId(int id) {
         this.id = id;
     }
 
-    public void setCustomClothes_id(int customClothes_id) {
-        this.customClothes_id = customClothes_id;
+    public void setCustomClothes_ids(String customClothes_ids) {
+        this.customClothes_ids = customClothes_ids;
     }
 
     public void setClothes_date(String clothes_date) {
